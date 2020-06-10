@@ -38,6 +38,7 @@
             padding-top: 5px;
             padding-left: 30px;
             align-items: center;
+            
         } 
         
 
@@ -47,6 +48,7 @@
             display: inline-block;
            padding-left: 0.75rem;
            padding-right: 0.75rem;
+           cursor: pointer;
         }
 
         .bottom-header{
@@ -68,18 +70,26 @@
     .menu{
         
         list-style: none;
-       height: 50px;
+      
     }
 
     .menu ul{
         list-style: none;
         position: relative;
+    
     }
+
+   
 
  
     .menu ul li{
+        margin-top: -5px;
         width: 120px;
+        height: 80px;
         float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
        
     }
 
@@ -92,10 +102,25 @@
         font-size: 32px;
         color: black;
     }
+    .menu li:nth-of-type(5){
+        background-color: red;
+    }
+
+    .menu a:nth-last-of-type(5){
+        color: white;
+    }
+
+    .menu a:nth-last-child()
+    {
+        color: white;
+    }
+
+
 
     .menu ul ul{
         position: absolute;
         visibility: hidden;
+       
     }
 
     .menu ul li:hover ul{
@@ -120,8 +145,9 @@
     .menu ul ul li{
         float: none;
     }
-    
-   
+
+
+
 
 	</style>
         
@@ -152,7 +178,7 @@
             <nav class="menu">     
                 <ul>
                     <li><a href="#">INÍCIO</a></li>
-                      <li><a href="#">CURSOS</a>
+                    <li><a href="#">CURSOS</a>
                         <ul>
                             <li><a href="#">INGLÊS</a>
                             <li><a href="#">MAIS HORAS</a>
@@ -164,16 +190,11 @@
                 </ul>
             </nav>
         </div>
-       
-        
-
-        
-
-
    </header>
 
-
    <body>
+      
+      
        
 
    </body>
