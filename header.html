@@ -1,241 +1,189 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>PBL</title>
-		<style>
-
-       @font-face {
-           font-family: Amatic;
-           src: url(../fonts/AmaticSC-Regular.ttf);
-       }     
-
-       *{
-           margin: 0;
-           padding: 0;
-       }
-
-        body{
-            margin: 0px;
-        }
-
-        
-
-        
-
-        .container{
-            background-color: #295596;
-            width: 100%;
-            height: 0.2rem; 
-        }
-
-        .top-header{
-            background-color: #295596;
-            width: 100%;
-            height: 2.0rem; 
-            display: flex;
-            padding-top: 5px;
-            padding-left: 30px;
-            align-items: center;
-            
-        } 
-        
-
-        .items img{
-            width: 20px;
-            height: 20px;
-            display: inline-block;
-           padding-left: 0.75rem;
-           padding-right: 0.75rem;
-           cursor: pointer;
-        }
-
-        .bottom-header{
-          
-              display: flex;
-              justify-content: space-around;
-              align-items: center;
-              padding: 0px 10px;
-            
-        }
-
-    .logo img{
-        cursor: pointer;
-        width: 200px;
-        height: 80px;
-       
-    }
-
-    .menu{
-        
-        list-style: none;
-      
-    }
-
-    .menu ul{
-        list-style: none;
-        position: relative;
-    
-    }
-
-   
-
- 
-    .menu ul li{
-        margin-top: -5px;
-        width: 120px;
-        height: 80px;
-        float: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-
-    .menu a{
-    
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        font-family: Amatic;
-        font-size: 32px;
-        color: black;
-    }
-    .menu li:nth-of-type(5){
-        background-color: red;
-    }
-
-    .menu a:nth-last-of-type(5){
-        color: white;
-    }
-
-    .menu a:nth-last-child()
-    {
-        color: white;
-    }
-
-
-
-    .menu ul ul{
-        position: absolute;
-        visibility: hidden;
-       
-    }
-
-    .menu ul li:hover ul{
-        visibility: visible;
-    }
-
-    .menu li {
-        display: inline-block;
-        
-    }
-
-    
-
-    .menu li a {
-        transition:  all 0.3s ease 0s;
-    }
-
-    .menu li a:hover {
-        color: #D168AB;
-    }
-
-    .menu ul ul li{
-        float: none;
-    }
-
-
-    
-   .image_forms{
-       background-image: url(../assets/hero-logo.png), url(../assets/hero-image.png), url(../assets/hero-logo.png);
-       background-size: 150px 150px, cover;
-       background-repeat: no-repeat, no-repeat;
-       width: 50%;
-       height: 500px;
-       display: flex;
-       align-items:center;
-       justify-content: center;
-   }
-
-   .image_forms .first_text{
-       font-family:   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       display: flex;
-       align-items: center;
-       color: white;
-       font-weight: bold;
-       font-size: 32px;
- 
-       display: block;
-       
-   }
-
-   .image_forms .second_text{
-       font-family:   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       color: white;
-       font-weight: bold;
-       font-size: 20px;
-       display: block;
-    
-     
-       
-   }
-
-	</style>
-        
-
-
-   <header>
-       <div class="container"></div>
-
-       <div class="top-header">
-            <div class="items">
-                    <img src="../assets/fb.png">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>PBL</title>
+      <style>
+      </style>
+      <link rel="stylesheet" type="text/css" href="body.css">
+      <link rel="stylesheet" type="text/css" href="header.css">
+      <header>
+         <div class="container"></div>
+         <div class="top-header">
+            <div class="links">
+               <div class="items">
+                  <img src="../assets/fb.png">
+               </div>
+               <div class="items">
+                  <img src="../assets/insta.png">
+               </div>
+               <div class="items">
+                  <img src="../assets/ytb.png" >
+               </div>
+               <div class="items">
+                  <img src="../assets/linkedin.png">
+               </div>
             </div>
-            <div class="items">
-                    <img src="../assets/insta.png">
+            <div class="login">
+               <a class="student">
+               Área do aluno
+               </a>
+               <a class="student">
+               Digiworld
+               </a>
             </div>
-            <div class="items">
-                    <img src="../assets/ytb.png" >
-            </div>
-            <div class="items">
-                    <img src="../assets/linkedin.png">
-            </div>
-        </div>
-        <div class="container"></div>   
-         
-           
-        <div class="bottom-header">
+         </div>
+         <div class="container"></div>
+         <div class="bottom-header">
             <div class="logo"><a><img src="../assets/REDBALLOON-REDS_LOGO_HOME-1.png"></a></div>
-            <nav class="menu">     
-                <ul>
-                    <li><a href="#">INÍCIO</a></li>
-                    <li><a href="#">CURSOS</a>
-                        <ul>
-                            <li><a href="#">INGLÊS</a>
-                            <li><a href="#">MAIS HORAS</a>
-                        </ul>
-                       </li>
-                    <li><a href="#">EVENTOS</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">UNIDADES</a></li>
-                </ul>
+            <nav class="menu">
+               <ul>
+                  <li><a href="#">INÍCIO</a></li>
+                  <li class="master">
+                     <a href="#">CURSOS E PROGRAMAS</a>
+                     <ul>
+                        <li><a href="#">INGLÊS</a>
+                        <li><a href="#">MAIS HORAS</a>
+                     </ul>
+                  </li>
+                  <li><a href="#">EVENTOS</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li class="last-child"><a href="#">UNIDADES</a></li>
+               </ul>
             </nav>
-        </div>
-   </header>
-
+         </div>
+      </header>
    <body>
-       <div class="image_forms">  
+      <div class="image_forms">
+         <div class="image">
+            <div class="img-text">
+               <p class="first_text">RED BALLOON</p>
+               <p class="second_text">Inglês divertido levado a sério</p>
+            </div>
+         </div>
+         <form class="forms">
+            <div class="container_forms">
+               <h2 class="h2">VENHA NOS CONHECER</h2>
+               <div class="sub">Traga seu filho para visitar a unidade mais próxima</div>
+               <input type="text" id="email" placeholder="E-mail">
+               <input type="text" id="responsable" placeholder="Nome do Responsável">
+               <input type="text" id="phone" placeholder="Celular">
+               <input type="text" id="sname" placeholder="Nome do aluno">
+               <input type="text" id="sbirth" placeholder="Data de nascimento do aluno">
+               <select id="unities" >
+                  <option value="São Paulo">São Paulo</option>
+                  <option value="São Carlos">São Carlos</option>
+                  <option value="Araraquara">Araraquara</option>
+               </select>
+               <div class="button"><strong>ENVIAR</strong></div>
+            </div>
+         </form>
+      </div>
+      <h2 class="phases_title">ETAPAS</h2>
+      <div class="phases">
+         <div class="subphases">
+            <div class="img_form"><img src="../assets/contact-form.png"></div>
+            <p class="text_form">Preencha o formulário</p>
+         </div>
+         <div class="arrow"><img src="../assets/arrow.png"></div>
+         <div class="subphases">
+            <div class="img_form"><img src="../assets/smartphone.png"></div>
+            <p class="text_form">Receba o contato da red ballon</p>
+         </div>
+         <div class="arrow"><img src="../assets/arrow.png"></div>
+         <div class="subphases">
+            <div class="img_form"><img src="../assets/contact-form.png"></div>
+            <p class="text_form">Visite uma unidade</p>
+         </div>
+         <div class="arrow"><img src="../assets/arrow.png"></div>
+         <div class="subphases">
+            <div class="img_form"><img src="../assets/contract.png"></div>
+            <p class="text_form">Matricule seu filho</p>
+         </div>
+      </div>
+      <div class="phases">
+      </div>
+      <div class="back">
+         <h2 class="reasons_title">POR QUE RED BALLOON</h2>
+         <div class="reasons">
+            <div class="img_reasons"><img src="../assets/start-up.png"></div>
+            <div class="img_reasons"><img src="../assets/trophy.png"></div>
+            <div class="img_reasons"><img src="../assets/time-left.png"></div>
+            <div class="img_reasons"><img src="../assets/lightbulb.png"></div>
+         </div>
+         <div class="reasons">
+            <div class="text1_reasons">
+               <p><strong>MUITO MAIS QUE INGLÊS</strong></p>
+            </div>
+            <div class="text1_reasons">
+               <p><strong>50 ANOS DE TRADIÇÃO</strong></p>
+            </div>
+            <div class="text1_reasons">
+               <p><strong>NOSSA ESTRUTURA</strong></p>
+            </div>
+            <div class="text1_reasons">
+               <p><strong>90% DE APROVAÇÃO EM CAMBRIDGE</strong></p>
+            </div>
+         </div>
+         <div class="reasons">
+            <div class="text2_reasons">
+               <p>Além de aprender um novo idioma, aqui seu filho pratica regras de convivência e é encorajado a desenvolver sua autonomiia e autoconfiança</p>
+            </div>
+            <div class="text2_reasons">
+               <p>Desde 1969, a Red Balloon se destaca por oferecer, além do ensino de inglês, atividades artística, culinária, teatro e música. A metodologia e o material são exclusivos e foram criados pensando em cada fase das crianças e adolescentes</p>
+            </div>
+            <div class="text2_reasons">
+               <p>Na Red Balloon a carga horária é de 4 horas por semana, com turmas de no máximo 13 alunos. Com esta estrutura, nossos alunos conseguem atingir a fluência do idioma.</p>
+            </div>
+            <div class="text2_reasons">
+               <p>Com mais de 90% de aprovação nos exames de Cambridge, a Red Balloon é sinônimo de fluência e sucesso.</p>
+            </div>
+         </div>
+      </div>
+      <h2 class="curses-main">CURSOS RED BALLON</h2>
+      <div class="curses">
+         <div class="img-curses1">
+            <div class="text-curses">
+               <p class="title-curses">Kids</p>
+               <p class="subtitle-curses">3 - 6 ANOS</p>
+               <p class="description-curses">Dos 3 aos 6 anos filho desesnvolve a compreensão e conversação por meio de atividades relacionadas ao universo infantil, músicas, jogos e brincadeiras</p>
+            </div>
+         </div>
+         <div class="img-curses2">
+            <div class="text-curses">
+               <p class="title-curses">Juniors</p>
+               <p class="subtitle-curses">7 - 9 ANOS</p>
+               <p class="description-curses">Entre os 7 e 9 anos, os alunos entram em contato com o alfabeto inglês e desenvolvem habilidades de leitura, escrita, compreensão e comunicação.</p>
+            </div>
+         </div>
+         <div class="img-curses3">
+            <div class="text-curses">
+               <p class="title-curses">Teens</p>
+               <p class="subtitle-curses">10 - 17 ANOS</p>
+               <p class="description-curses">Durante o estágio teens, nossos alunos são expostos a aspectos culturais da língua ingles e integram suas habilidades de maneira personalizada e fluente.</p>
+            </div>
+         </div>
+      </div>
+      <h2 class="testimony-title">DEPOIMENTOS</h2>
+      <div class="testimony">
+      <div class="testimony-card">
+          <p class="testimony-content">O que eu mais gosto na Red Balloon são as conversas que temos em classe,
+              porque gosto de ver as diferentes opiniões dos meus amigos nos debates
+          </p>
+          <p class="testimony-student">- Maria Eduarda</p>
+          <p class="testimony-data">15 anos -  ESTAGIO T6</p>
 
-        <div class="first_text"></div>
-        <div class="second_text"></div>
-       </div>
-      
-       
+      </div>
 
+      <div class="testimony-card">
+        <p class="testimony-content">O que eu mais gosto na Red Balloon são as conversas que temos em classe,
+            porque gosto de ver as diferentes opiniões dos meus amigos nos debates
+        </p>
+        <p class="testimony-student">- Maria Eduarda</p>
+        <p class="testimony-data">15 anos -  ESTAGIO T6</p>
+
+    </div>
+</div>
    </body>
-
-
-
 </html>

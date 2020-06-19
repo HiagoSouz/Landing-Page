@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Amatic;
+    src: url(../fonts/AmaticSC-Regular.ttf);
+}     
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+     margin: 0px;
+ }
+
+ 
+
+ 
+
+ .container{
+     background-color: #295596;
+     width: 100%;
+     height: 0.2rem; 
+ }
+
+ .top-header{
+     background-color: #295596;
+     width: 100%;
+     height: 2.0rem; 
+     display: flex;
+     padding-top: 5px;
+     align-items: center;
+     justify-content: space-around;
+     
+     
+ } 
+
+ .links{
+     display: flex;
+ }
+
+ .login{
+     display: flex;
+   
+ }
+
+ .student{
+     
+     color: white;
+     display: inline-block;
+     padding-left: 0.75rem;
+     padding-right: 0.75rem;
+     cursor: pointer;
+     font-size: 16px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+ }
+ 
+
+ .items img{
+     width: 20px;
+     height: 20px;
+ 
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    cursor: pointer;
+
+ }
+
+ .bottom-header{
+   
+       display: flex;
+       justify-content: space-around;
+       padding: 0px 10px;
+
+     
+ }
+
+.logo img{
+ cursor: pointer;
+ width: 200px;
+ height: 80px;
+
+}
+
+.menu{
+ 
+ list-style: none;
+
+}
+
+.menu > ul{
+ list-style: none;
+ position: relative;
+display: flex;
+align-items: center;
+height: 100%;
+}
+
+.menu ul .master{
+    position: relative;
+    
+}
+
+.menu ul .master ul{
+    list-style: none;
+    background-color: white;
+    top: 71px;
+    left: 0;
+    padding: 0 35px;
+}
+
+.menu ul li{
+
+ padding: 15px;
+ float: left;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.menu a{
+
+ display: block;
+ text-decoration: none;
+ text-align: center;
+ font-family: Amatic;
+ font-size: 32px;
+ color: black;
+}
+.menu .last-child{
+ background-color: red;
+ height: 100%;
+ box-sizing: border-box;
+
+}
+
+.menu .last-child a:hover{
+    color: white;
+}
+
+.menu a:nth-last-of-type(5){
+ color: white;
+}
+
+.menu a:nth-last-child()
+{
+ color: white;
+}
+
+
+
+
+.menu ul ul{
+ position: absolute;
+ visibility: hidden;
+
+}
+
+.menu ul li:hover ul{
+ visibility: visible;
+}
+
+.menu li {
+ display: inline-block;
+ 
+}
+
+
+
+.menu li a {
+ transition:  all 0.3s ease 0s;
+}
+
+.menu li a:hover {
+ color: #D168AB;
+}
+
+.menu ul ul li{
+ float: none;
+}

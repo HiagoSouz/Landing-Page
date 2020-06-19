@@ -1,0 +1,354 @@
+@font-face {
+    font-family: Staaliches;
+    src: url(../fonts/Staatliches-Regular.ttf);
+}     
+
+
+.image {
+    background-image: url(../assets/hero-logo.png), url(../assets/hero-image.png), url(../assets/hero-logo.png);
+    background-size: 150px 150px, cover;
+    background-repeat: no-repeat, no-repeat;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    opacity: 0.9;
+   
+}
+
+.forms {
+    background-color: #295596;
+    width: 50%;
+    display: flex;
+    height: 500px;
+}
+
+.img-text{
+    padding-top: 250px;
+}
+
+.image .first_text {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: cn;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    
+}
+
+.image .second_text {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+}
+
+.h2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.sub {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.container_forms {
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 200px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: #295596;
+    color: white;
+}
+
+.button {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: #ef323d;
+    color: white;
+}
+
+.select {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: #295596;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.phases {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img_form {
+    background-color: #ef323d;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.subphases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+}
+
+.text_form {
+    color: #295596;
+    padding-top: 15px;
+    font-weight: bold;
+    display: flex;
+}
+
+
+
+.phases_title {
+    font-family: Staaliches;
+    font-size: 32px;
+    padding-top:40px;
+    padding-bottom: 30px;
+    color: #295596;
+    text-align: center;
+}
+
+.arrow{
+    padding: 40px;
+    
+}
+
+.reasons_title {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-family: Staaliches;
+    font-size: 32px;
+    
+}
+
+.reasons {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.img_reasons {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+.text1_reasons {
+   
+    color: white;
+    padding-top: 10px;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.text2_reasons {
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.back {
+    background-image: url(../assets/background.png);
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.curses-main {
+    font-family: Staaliches;
+    padding-top:40px;
+    padding-bottom: 30px;
+    color: #295596;
+    text-align: center;
+    font-size: 32px;
+}
+
+.img-curses1{
+    background-image: url(../assets/course-kids.png);
+    background-repeat: no-repeat;
+
+    background-size: 300px 300px, cover;
+    height: 300px;
+    width: 300px;
+}
+
+.img-curses2{
+    background-image: url(../assets/course-juniors.png);
+    background-repeat: no-repeat;
+
+    background-size: 300px 300px, cover;
+    height: 300px;
+    width: 300px;
+}
+
+
+.img-curses3{
+    background-image: url(../assets/course-teens.png);
+    background-repeat: no-repeat;
+
+
+    background-size: 300px 300px, cover;
+    height: 300px;
+    width: 300px;
+}
+
+
+.text-curses{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px
+
+}
+
+.curses{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-evenly;
+   
+}
+
+.title-curses{
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.subtitle-curses{
+    color: white;
+    font-weight: 700;
+}
+
+.description-curses{
+    color: white;
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+
+.testimony-card{
+    border: 2px solid #295596;
+    border-radius: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+
+.testimony-content{
+   color: #295596;
+}
+
+blockquote {
+    border:none;
+  
+    }
+
+.testimony-content::after{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    content: "\"";
+    font-weight: bold;
+    font-size:16px;
+    color:#295596;
+}
+
+.testimony-content::before{
+    font-family:Georgia, "Times New Roman", Times, serif;
+    content: "\"";
+font-weight: bold;
+font-size:16px;
+color:#295596;
+}
+
+
+.testimony-student{
+    color: #295596;
+    font-weight: 900;
+    align-self: flex-end;
+
+}
+
+.testimony-data{
+    color: #295596;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.testimony-title{
+    font-family: Staaliches;
+    padding-top:40px;
+    padding-bottom: 30px;
+    color: #295596;
+    text-align: center;
+    font-size: 32px;
+}
+
+.testimony{
+    display: flex;
+    justify-content: space-evenly;
+}
