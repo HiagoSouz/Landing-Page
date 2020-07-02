@@ -1,8 +1,11 @@
 @font-face {
     font-family: Staaliches;
     src: url(../fonts/Staatliches-Regular.ttf);
-}     
+}
 
+.body {
+    position: relative;
+}
 
 .image {
     background-image: url(../assets/hero-logo.png), url(../assets/hero-image.png), url(../assets/hero-logo.png);
@@ -15,7 +18,6 @@
     justify-content: center;
     float: left;
     opacity: 0.9;
-   
 }
 
 .forms {
@@ -25,11 +27,11 @@
     height: 500px;
 }
 
-.img-text{
+.img-text {
     padding-top: 250px;
 }
 
-.image .first_text {
+.image .first-text {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     align-items: center;
@@ -38,10 +40,9 @@
     font-weight: bold;
     font-size: 48px;
     display: block;
-    
 }
 
-.image .second_text {
+.image .second-text {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     font-weight: bold;
@@ -49,10 +50,11 @@
     display: block;
 }
 
-.h2 {
+.forms-title {
     color: white;
     text-align: center;
     padding-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .sub {
@@ -61,7 +63,7 @@
     padding-bottom: 10px;
 }
 
-.container_forms {
+.container-forms {
     padding-top: 30px;
     padding-left: 50px;
     padding-right: 200px;
@@ -89,6 +91,7 @@ input[type=text], select {
     box-sizing: border-box;
     background-color: #ef323d;
     color: white;
+    text-transform: uppercase;
 }
 
 .select {
@@ -116,7 +119,7 @@ input[type=text], select {
     text-align: center;
 }
 
-.img_form {
+.img-form {
     background-color: #ef323d;
     border-radius: 50%;
     height: 120px;
@@ -124,10 +127,9 @@ input[type=text], select {
     justify-content: center;
     align-items: center;
     display: flex;
-    
 }
 
-.subphases{
+.subphases {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,75 +137,69 @@ input[type=text], select {
     flex: 2;
 }
 
-.text_form {
+.text-form {
     color: #295596;
     padding-top: 15px;
     font-weight: bold;
     display: flex;
 }
 
-
-
-.phases_title {
+.phases-title {
     font-family: Staaliches;
     font-size: 32px;
-    padding-top:40px;
+    padding-top: 40px;
     padding-bottom: 30px;
     color: #295596;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.arrow{
+.arrow {
     padding: 40px;
-    
 }
 
-.reasons_title {
+.reasons-title {
     padding-top: 100px;
     padding-bottom: 20px;
     color: white;
     text-align: center;
     font-family: Staaliches;
     font-size: 32px;
-    
+    text-transform: uppercase;
 }
 
 .reasons {
-    padding-left: 10%;
-    padding-right: 10%;
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin: 0 10%;
 }
 
-.img_reasons {
+.sub-reasons {
+    text-align: center;
+    width: 300px;
+    color: white;
+    margin-right: 20px;
+}
+
+.sub-reasons:last-child {
+    margin-right: 0;
+}
+
+.img-reasons {
     border-radius: 50%;
     height: 120px;
     width: 120px;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex: 1;
+    margin: 0 auto 10px;
 }
 
-.text1_reasons {
-   
-    color: white;
-    padding-top: 10px;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+.text1-reasons {
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.text2_reasons {
-    color: white;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex: 1;
+.text2-reasons {
+    line-height: 1.5;
 }
 
 .back {
@@ -216,78 +212,78 @@ input[type=text], select {
 
 .curses-main {
     font-family: Staaliches;
-    padding-top:40px;
+    padding-top: 40px;
     padding-bottom: 30px;
     color: #295596;
     text-align: center;
     font-size: 32px;
 }
 
-.img-curses1{
+.img-curses1 {
     background-image: url(../assets/course-kids.png);
     background-repeat: no-repeat;
-
     background-size: 300px 300px, cover;
     height: 300px;
     width: 300px;
 }
 
-.img-curses2{
+.img-curses2 {
     background-image: url(../assets/course-juniors.png);
     background-repeat: no-repeat;
-
     background-size: 300px 300px, cover;
     height: 300px;
     width: 300px;
 }
 
+.arrow-reasons {
+    display: none;
+}
 
-.img-curses3{
+.img-curses3 {
     background-image: url(../assets/course-teens.png);
     background-repeat: no-repeat;
-
-
     background-size: 300px 300px, cover;
     height: 300px;
     width: 300px;
 }
 
-
-.text-curses{
+.text-curses {
     display: flex;
     align-items: flex-start;
     justify-content: start;
     flex-direction: column;
     padding: 20px
-
 }
 
-.curses{
+.curses {
     display: flex;
     width: 100%;
     height: 300px;
     justify-content: space-evenly;
-   
 }
 
-.title-curses{
+.title-curses {
     color: white;
     font-weight: bold;
     font-size: 32px;
+    text-transform: uppercase;
 }
 
-.subtitle-curses{
+.subtitle-curses {
     color: white;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.description-curses{
+.description-curses {
     color: white;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 20px;
+    line-height: 1.5;
+    
 }
 
-.testimony-card{
+.testimony-card {
     border: 2px solid #295596;
     border-radius: 20px;
     width: 30%;
@@ -298,57 +294,241 @@ input[type=text], select {
     padding: 20px;
 }
 
-
-
-.testimony-content{
-   color: #295596;
+.testimony-content {
+    color: #295596;
+    margin-bottom: 10px;
+    
 }
 
 blockquote {
-    border:none;
-  
-    }
-
-.testimony-content::after{
-    font-family:Georgia, "Times New Roman", Times, serif;
-    content: "\"";
-    font-weight: bold;
-    font-size:16px;
-    color:#295596;
+    border: none;
 }
 
 .testimony-content::before{
-    font-family:Georgia, "Times New Roman", Times, serif;
-    content: "\"";
-font-weight: bold;
-font-size:16px;
-color:#295596;
+    content: '';
+    background-image: url(../assets/aspas1.png);
+    height: 15px;
+    width: 10px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    
+}
+
+.testimony-content::after{
+    content: '';
+    background-image: url(../assets/aspas2.png);
+    height: 15px;
+    width: 10px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
-.testimony-student{
+
+.testimony-student {
     color: #295596;
     font-weight: 900;
     align-self: flex-end;
-
 }
 
-.testimony-data{
+.testimony-data {
     color: #295596;
     font-weight: 500;
     align-self: flex-end;
 }
 
-.testimony-title{
+.testimony-title {
     font-family: Staaliches;
-    padding-top:40px;
+    padding-top: 40px;
     padding-bottom: 30px;
     color: #295596;
     text-align: center;
     font-size: 32px;
+    text-transform: uppercase;
 }
 
-.testimony{
+.testimony {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .image-forms {
+        height: 20%;
+    }
+    .image {
+        background-image: url(../assets/hero-logo.png), url(../assets/hero-image.png), url(../assets/hero-logo.png);
+        background-size: 150px 150px, 100vw 100vw;
+        background-repeat: no-repeat, no-repeat;
+        width: 100vw;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.9;
+    }
+    .img-text {
+        padding-top: 250px;
+    }
+    .image .first-text {
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        display: block;
+    }
+    .image .second-text {
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        display: block;
+        padding-bottom: 10px;
+    }
+    .forms {
+        background-color: #295596;
+        width: 100%;
+        display: flex;
+        height: 105vh;
+    }
+    .container-forms {
+        padding-top: 5vh;
+        padding-left: 10vw;
+        padding-right: 10vw
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 8px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 2px solid white;
+        border-radius: 50px;
+        box-sizing: border-box;
+        background-color: #295596;
+        color: white;
+    }
+    .button {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        background-color: #ef323d;
+        color: white;
+    }
+    .select {
+        width: 100%;
+        padding: 8px 20px;
+        margin: 10vh 0;
+        display: inline-block;
+        border: 2px solid white;
+        border-radius: 50px;
+        box-sizing: border-box;
+        background-color: #295596;
+        color: white;
+    }
+    ::placeholder {
+        color: white;
+    }
+    .phases {
+        padding-left: 20%;
+        padding-right: 15%;
+        padding-bottom: 35px;
+        display: flex;
+        justify-content: start;
+        text-align: center;
+        align-items: center;
+    }
+    .phases-title {
+        font-family: Staaliches;
+        font-size: 32px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        color: #295596;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .arrow {
+        padding: 40px;
+    }
+    .subphases {
+        padding-left: 50px;
+    }
+    .reasons-title {
+        padding-top: 100px;
+        padding-bottom: 20px;
+        color: white;
+        text-align: center;
+        font-family: Staaliches;
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+    .reasons {
+        display: flex;
+        justify-content: start;
+    }
+    .sub-reasons {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .img-reasons {
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+    }
+    .text1-reasons {
+        color: white;
+        width: 250px;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    .text2-reasons {
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .back {
+        background-image: url(../assets/background.png);
+        width: 100%;
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .arrow-reasons {
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding-right: 30px;
+    }
+    .curses {
+        display: block;
+        height: auto;
+    }
+    .img-curses {
+        width: 300px;
+        height: 300px;
+        background: cover;
+        margin: 20px auto;
+    }
+    .text-curses {
+        padding: 20px;
+    }
+    .testimony {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimony-card {
+        width: 70%;
+        margin: 20px;
+    }
 }
