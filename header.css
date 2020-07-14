@@ -191,7 +191,7 @@ body {
         align-items: center;
     }
     .menu {
-        display: inline-block;
+        display: block;
         position: relative;
         flex-direction: column;
     }
