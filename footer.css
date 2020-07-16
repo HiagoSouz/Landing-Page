@@ -6,7 +6,7 @@
   padding-top: 5px;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 50px;
+
 }
 
 .links-footer {
@@ -16,8 +16,8 @@
 
 .footer-logo {
   left: 0;
-  bottom: 34px;
-  position: absolute;
+  bottom: -3px;
+  position: relative;
   width: 150px;
   height: 150px;
 }
@@ -29,12 +29,12 @@
     height: 2.0rem;
     display: flex;
     padding-top: 5px;
-    margin-top: 50px;
+    
   }
   .footer-logo {
     left: 0;
-    bottom: 50px;
-    position: absolute;
+    bottom: 13px;
+    position: relative;
     width: 50px;
     height: 50px;
   }
