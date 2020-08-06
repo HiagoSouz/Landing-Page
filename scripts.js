@@ -1,5 +1,10 @@
-document.querySelector('#button-menu').addEventListener('click',function(){
-  menuBox = document.querySelector("#navmenu");
+
+
+var actionMenu = document.querySelector('#button-menu')
+var menuBox = document.querySelector("#navmenu");
+
+actionMenu.addEventListener('click', event => {
+  
   if(menuBox.style.display == "block") { 
     menuBox.style.display = "none";
   }
@@ -8,11 +13,95 @@ document.querySelector('#button-menu').addEventListener('click',function(){
   }
 
 }) 
-   
+
+
+
+function validar(){
+  var responsable = formuser.responsable.value;
+  var email = formuser.email.value;
+  var phone = formuser.phone.value;
+  var sname = formuser.sname.value;
+  var sbirth = formuser.sbirth.value;
+
+  if(email == "" || email.indexOf('@') == -1 ){
+    alert('Preencha o campo E-mail.');
+    formuser.email.focus();
+    return false;
+}
+  
+  if(responsable == ""){
+      alert('Preencha o nome do responsável.');
+      formuser.responsable.focus();
+      return false;
+  }
+
+  if(phone == "" || phone.length <= 8 || isNaN(phone)){
+    alert('O número de telefone é inválido (utilize apenas números)');
+    formuser.phone.focus();
+    return false;
+}
+
+  if(sname == ""){
+    alert('Preencha o campo nome do estudante.');
+    formuser.sname.focus();
+    return false;
+  }
+
+  if(sbirth == "" || sbirth[2]!='/' || sbirth[5]!='/' ){
+    alert('Preencha a data de nascimento do aluno (Foramato: 00/00/0000).');
+    formuser.sbirth.focus();
+    return false;
+  }
+
+  
+ 
   
 
-  /*
-  document.querySelector('#button-forms').addEventListener('click', function(frm){
+}
+
+
+$('.carousel-phases').slick({
+  prevArrow: '.arrow',
+  nextArrow: '.arrow',
+  responsive: [
+    {
+      breakpoint: 1023
+    }
+    ,
+    {
+      breakpoint: 3000,
+    }
+  ]
+  
+});
+
+$('.carousel-reasons').slick({
+
+
+  responsive: [
+    {
+      breakpoint: 1023
+    }
+    ,
+    {
+      breakpoint: 3000,
+      settings: "unslick"
+    }
+  ]
+
+});
+
+
+
+
+
+
+
+
+  
+
+  
+  /*document.querySelector('#button-forms').addEventListener('click', function(frm){
 
       var email = frm.email.value;
       var responsable = frm.responsable.value;
@@ -63,3 +152,4 @@ document.querySelector('#button-menu').addEventListener('click',function(){
 
 
   })*/
+ 

@@ -18,7 +18,6 @@
    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
    <script type="text/javascript" src="slick/slick.min.js"></script>
 
-
    
 
    <header>
@@ -80,7 +79,7 @@
             <p class="second-text">Inglês divertido levado a sério</p>
          </div>
       </div>
-      <form class="forms" method="POST">
+      <form class="forms" name="formuser" method="POST">
          <div class="container-forms">
             <h2 class="forms-title">Venha nos conhecer</h2>
             <div class="sub">Traga seu filho para visitar a unidade mais próxima</div>
@@ -94,7 +93,7 @@
                <option value="São Carlos">São Carlos</option>
                <option value="Araraquara">Araraquara</option>
             </select>
-            <div class="button" id="button-forms"><strong>Enviar</strong></div>
+            <input type="submit" class="button" id="button-forms" onclick="return validar()"></input>
          </div>
       </form>
    </div>
